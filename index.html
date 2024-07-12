@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <link rel="stylesheet" href="style.css">
+    <title>Fully Responsive Website</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="iskcon.jpeg" alt="" class="logo">
+            <h1> Hare Krishna </h1>
+        </div>
+        <ul class="nav">
+            <li class="mobile"><a href="#">Home</a></li>
+            <li class="mobile"><a href="#">About</a></li>
+            <li class="mobile"><a href="#">Contact Us</a></li>
+            <li class="mobile"><a href="#">Services</a></li>
+            <li onclick="shownav()" menu-btn"><a href="#"><svg fill="white" xmlns="http://www.w3.org/2000/svg"
+                        height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+        <ul class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li onclick="hidenav()"><a href="#"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="bg-img.png" class="bg" alt="">
+        <div class="hero-1">
+            <span class="first">Let's Learn Together</span>
+            <span class="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quos facilis ullam
+                cupiditate dolores, debitis aut maiores magni, assumenda, optio quisquam tenetur velit ea.</span>
+            <form action="">
+                <input type="text" placeholder="Enter Your Email">
+                <label for="">Subscribe</label>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="hero-2">
+        <div class="left-1">
+            <p>
+                <span class="big-text">What is Coding ?
+                </span>
+                <span class="small-text">Coding, also known as programming, is the process of designing and building executable computer programs to accomplish a specific task or solve a problem. It involves writing sets of instructions in a programming language that a computer can understand and execute. These instructions, or code, can range from simple commands to complex algorithms.
+
+                    At its core, coding allows humans to communicate with machines and instruct them on how to perform tasks. It involves breaking down a problem into smaller, manageable parts, designing a logical sequence of steps to solve each part, and then implementing these steps in code.
+                    
+                    Coding is used in various fields such as software development, web development, data analysis, artificial intelligence, and more. It enables the creation of applications, websites, games, and tools that shape the digital world we interact with daily.
+                    
+                    Learning to code not only involves mastering a programming language but also developing problem-solving skills, logical thinking, and creativity to efficiently translate ideas into functioning software. It is a skill that empowers individuals to innovate, automate tasks, and contribute to technological advancements across industries.
+                </span>
+            </p>
+        </div>
+        <div class="right-1">
+            <img src="first-img.jpg" alt="">
+        </div>
+    </section>
+    <section class="hero-3">
+        <div class="left-1">
+            <p>
+                <span class="big-text">How to Start Coding ?
+                </span>
+                <span class="small-text">Starting coding is an exciting journey that begins with choosing a programming language suited to your interests and goals, such as Python for its beginner-friendly syntax. Once you've selected a language, set up a development environment with tools like VSCode or PyCharm. Begin by learning foundational concepts like variables, data types, and control structures through online tutorials or courses. Practice these concepts with coding exercises and challenges on platforms like LeetCode or freeCodeCamp. Engage with coding communities and forums to seek guidance and feedback on your progress. As you gain confidence, start working on small projects that interest you, whether it's a simple application or automating a task. Embrace persistence and patience, as coding involves problem-solving and learning from mistakes. Stay curious and continue expanding your skills by exploring new technologies and techniques as you evolve as a coder.
+                    Starting coding is a journey that begins by choosing a programming language, such as Python for its readability and versatility. Set up your development environment with tools like VSCode or PyCharm, and begin learning the basics: variables, data types, loops, and functions. Practice these concepts with coding exercises on platforms like Codecademy or LeetCode, and seek support from online communities like Stack Overflow. Start small with projects that interest you, whether it's a simple calculator or a basic website. Embrace challenges and learn from mistakes as you gain confidence in problem-solving. Stay curious and continue learning, exploring new languages and technologies to expand your skills as a coder.
+
+
+
+                </span>
+            </p>
+        </div>
+        <div class="right-1">
+            <img src="second-img.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        COPYRIGHT  &copy  ALL Rights Reserved 2024
+    </footer>
+
+    <script>
+        function shownav() {
+            var show = document.querySelector(".hide")
+            show.style.display = 'flex'
+        }
+        function hidenav() {
+            var hide = document.querySelector(".hide")
+            hide.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>
+
